@@ -62,3 +62,14 @@ header {
     font-family: "Fraunces", Georgia, serif;
     font-size: 1.5rem;
 }
+
+.site-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem 1.5rem;
+}
+
+.site-footer p {
+    margin: 0;
+}
