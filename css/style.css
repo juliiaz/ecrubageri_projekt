@@ -194,10 +194,53 @@ header {
     padding: 1.25rem;
 }
 
-.sortiment-intro h1,
-.sortiment-intro h2, 
+.sortiment-intro h1, 
 .sortiment-intro p {
     text-align: center;
 }
+
+.sortiment-intro h2 {
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+
+/* Sortiment – produktkort */
+
+.product-cards {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    padding: 2rem 1.25rem;
+    background-color: #6f5a55;
+}
+
+.product-card {
+    background-color: hsl(35, 86%, 97%);
+    border-radius: 0.3rem;
+}
+
+.product-card img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 0.3rem;
+}
+
+.product-card h3,
+.product-card p {
+    margin: 0;
+    padding: 0 1rem;
+}
+
+.product-card h3 {
+    padding-top: 1rem;
+}
+
+.product-card p {
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+}
+
 
 
