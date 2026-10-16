@@ -141,3 +141,44 @@ header {
     width: 100%;
     height: auto;
 }
+
+.selected-products {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    padding: 2rem 1.25rem;
+    background-color: #6f5a55;
+}
+
+.selected-products h2 {
+    text-align: center;
+    margin-bottom: 0;
+    color: lch(98.57% 2.32 60.31);
+}
+
+.selected-product-card {
+    background-color: hsl(35, 86%, 97%);
+    border-radius: 0.3rem;
+}
+
+.selected-product-card img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 0.3rem;
+}
+
+.selected-product-card h3,
+.selected-product-card p {
+    margin: 0;
+    padding: 0 1rem;
+}
+
+.selected-product-card h3 {
+    padding-top: 1rem;
+}
+
+.selected-product-card p {
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+}
