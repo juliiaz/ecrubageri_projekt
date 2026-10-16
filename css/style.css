@@ -115,3 +115,29 @@ header {
 .hero-button:hover {
     background-color: lch(15.88% 7.66 53.42);
 }
+
+.intro-section {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0;
+}
+
+.intro-text {
+    padding: 0 1.25rem;
+}
+
+.intro-text h2 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.intro-text p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.intro-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
