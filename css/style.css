@@ -259,4 +259,41 @@ header {
 }
 
 
+/* Om oss – bakningsprocess */
+
+.baking-process {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem 1.25rem;
+    background-color: #6f5a55;
+}
+
+.baking-process h2 {
+    margin: 0;
+    text-align: center;
+    color: hsl(35, 86%, 97%);
+}
+
+.process-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.process-card {
+    padding: 1.25rem;
+    background-color: hsl(35, 86%, 97%);
+    border-radius: 0.3rem;
+}
+
+.process-card h3 {
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+}
+
+.process-card p {
+    margin: 0;
+}
+
 
