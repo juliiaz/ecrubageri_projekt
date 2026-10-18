@@ -395,6 +395,7 @@ header {
     .site-nav {
     display: flex;
     gap: 2rem;
+    margin-right: 1.5rem;
     }
 
     .site-nav ul {
@@ -411,7 +412,7 @@ header {
     font-size: 1.5rem;
     }
 
-/* Footer – större skärmar */
+/* Gemensam footer */
     .site-footer {
     flex-direction: row;
     justify-content: space-between;
@@ -419,6 +420,27 @@ header {
     gap: 3rem;
     font-size: 1.4rem;
     }
+
+/* Startsida - Hero-sektion */
+.hero-image img {
+    width: 100%;
+    height: 445px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+.hero-image {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.hero-image h1 {
+    font-size: 2.8rem;
+}
+
+.hero-button {
+    font-size: 1.5rem;
+}
 
 
     
