@@ -1,3 +1,7 @@
+/* 1. Styling – mindre skärmar */
+
+/* Gemensam styling */
+
 * {
     box-sizing: border-box;
 }
@@ -367,6 +371,73 @@ header {
 
 .contact-info a {
     color: lch(15.88% 7.66 53.42);
+}
+
+/* 2. Styling - Större skärmar */
+
+@media (min-width: 768px) {
+    
+/* Gemensam header */
+    header {
+        padding: 1.5rem 3rem;
+    }
+
+    .logo {
+        font-size: 2rem;
+        margin-left: 1rem;
+    }
+
+    .hamburger-menu {
+        display: none;
+    }
+
+    
+    .site-nav {
+    display: flex;
+    gap: 2rem;
+    }
+
+    .site-nav ul {
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    }
+
+    .site-nav a {
+    color: hsl(23, 24%, 21%);
+    text-decoration: none;
+    font-size: 1.5rem;
+    }
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 
