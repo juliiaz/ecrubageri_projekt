@@ -135,8 +135,7 @@ header {
 }
 
 .intro-text h2 {
-    margin-top: 0;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 .intro-text p {
@@ -441,6 +440,23 @@ header {
 .hero-button {
     font-size: 1.5rem;
 }
+
+/* Startsida - Introsektionen */
+.intro-section {
+    flex-direction: row;
+    align-items: center;
+    gap: 3rem;
+    padding: 3rem;
+}
+.intro-text h2 {
+    margin-bottom: 0.5rem;
+}
+
+.intro-image img {
+    width: 97%;
+    border-radius: 0.5rem;
+}
+
 
 
     
