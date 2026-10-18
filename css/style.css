@@ -162,6 +162,7 @@ header {
 .selected-products h2 {
     text-align: center;
     margin-bottom: 0;
+    margin-top: 0;
     color: lch(98.57% 2.32 60.31);
 }
 
@@ -455,6 +456,19 @@ header {
 .intro-image img {
     width: 97%;
     border-radius: 0.5rem;
+}
+
+/* Startsida – utvalda produkter */
+.selected-products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.selected-products h2 {
+    grid-column: 1 / -1;
+    font-size: 2rem;
+    margin-top: 0;
 }
 
 
