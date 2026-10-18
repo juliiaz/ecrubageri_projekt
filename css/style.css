@@ -204,6 +204,12 @@ header {
     margin-bottom: 0.5rem;
 }
 
+.down-arrow {
+    margin-left: 0.1rem;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
 
 /* Sortiment – produktkort */
 
