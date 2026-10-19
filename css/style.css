@@ -424,7 +424,7 @@ header {
 /* Startsida - Hero-sektion */
 .hero-image img {
     width: 100%;
-    height: 390px;
+    height: 370px;
     object-fit: cover;
     border-radius: 0.5rem;
 }
@@ -481,7 +481,7 @@ header {
 
 /* Sortiment - Introsektion */
 .sortiment-intro h1 {
-    font-size: 2.3rem;
+    font-size: 2.5rem;
 }
 
 .sortiment-intro p {
@@ -500,6 +500,14 @@ header {
     margin-left: 0.5rem;
     font-weight: 400;
 }
+
+/* Sortiment - Produktkort */
+.product-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
 
 
     
