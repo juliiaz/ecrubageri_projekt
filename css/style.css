@@ -519,6 +519,17 @@ header {
     font-size: 1.5rem;
 }
 
+/* Om oss - Bakprocess */
+.process-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.baking-process h2 {
+    font-size: 1.9rem;
+}
+
 
 
     
