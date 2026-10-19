@@ -508,6 +508,17 @@ header {
     gap: 2rem;
 }
 
+/* Om oss - Intro */
+.about-intro h1 {
+    font-size: 2.5rem;
+}
+
+.about-intro p {
+    max-width: 700px;
+    margin:auto;
+    font-size: 1.5rem;
+}
+
 
 
     
