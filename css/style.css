@@ -373,6 +373,23 @@ header {
     color: lch(15.88% 7.66 53.42);
 }
 
+.contact-heading {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.contact-heading h2 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1.8rem;
+}
+
+.contact-heading p {
+    margin: 0 auto;
+    max-width: 600px;
+    font-size: 1.4rem;
+}
+
 /* 2. Styling - Större skärmar */
 
 @media (min-width: 768px) {
@@ -528,6 +545,23 @@ header {
 
 .baking-process h2 {
     font-size: 1.9rem;
+}
+
+/* Om oss - Kontakt */
+.contact-section {
+    padding: 3rem;
+}
+
+.contact-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-info {
+    margin-left: 20rem;
 }
 
 
