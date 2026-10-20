@@ -1,5 +1,7 @@
 "use strict";
 
+// Hamburgermenyn:
+
 // Hämtar nav och hamburgermenyn
 const hamburgerMenu = document.querySelector(".hamburger-menu");
 const siteNav = document.querySelector(".site-nav");
@@ -15,5 +17,18 @@ function toggleMenu() {
 
 // Event listener för hamburgermenyn
 hamburgerMenu.addEventListener("click", toggleMenu);
+
+// Validering - Formulär: 
+
+// Hämtar formulär och dess inmatningsfält
+const contactForm = document.querySelector(".contact-form-layout form");
+const nameInput = document.getElementById("name");
+const emailInput = document.getElementById("email");
+const messageInput = document.getElementById("message");
+
+//  Hämtar elementen som ska visa felmeddelanden  
+const nameError = document.getElementById("name-error");
+const emailError = document.getElementById("email-error");
+const messageError = document.getElementById("message-error");
 
 
