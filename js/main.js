@@ -31,4 +31,9 @@ const nameError = document.getElementById("name-error");
 const emailError = document.getElementById("email-error");
 const messageError = document.getElementById("message-error");
 
+// Körs när kontaktformuläret skickas
+contactForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+});
+
 
