@@ -36,7 +36,7 @@ contactForm.addEventListener("submit", function (event) {
     event.preventDefault();
 
 
-// Kontroll för namnfält
+// Kontroll för formulärfälten: 
 
 // Hämtar texten från namnfältet
 const name = nameInput.value;
@@ -47,7 +47,32 @@ const name = nameInput.value;
 } else {
     nameError.textContent = "";
 }
+
+// Hämtar texten från e-postfältet
+const email = emailInput.value.trim();
+
+// Kontrollerar att e-postadressen är ifylld
+if (email === "") {
+    emailError.textContent = "Fyll i din e-postadress.";
+
+// Kontrollerar att e-postadressen har ett rimligt format
+} else if (emailInput.validity.typeMismatch) {
+    emailError.textContent = "Ange en giltig e-postadress.";
+} else {
+    emailError.textContent = "";
+}
+
+
+
+
+
+
+
+
+
 });
+
+
 
 
 
