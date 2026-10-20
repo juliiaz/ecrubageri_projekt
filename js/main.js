@@ -34,6 +34,25 @@ const messageError = document.getElementById("message-error");
 // Körs när kontaktformuläret skickas
 contactForm.addEventListener("submit", function (event) {
     event.preventDefault();
+
+
+// Kontroll för namnfält
+
+// Hämtar texten från namnfältet
+const name = nameInput.value;
+
+// Kontrollerar att fältet inte är tomt
+    if (name.trim() === "") {
+    nameError.textContent = "Fyll i ditt namn.";
+} else {
+    nameError.textContent = "";
+}
 });
+
+
+
+
+
+
 
 
