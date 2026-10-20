@@ -53,12 +53,39 @@ h3 {
 
 .site-nav {
     display: none;
+    width: 125%;
+    margin-left: -1.25rem;
+    margin-right: -1.25rem;
+    background-color: lab(87.42% 2.91 3.79);
+}
+
+.site-nav.open {
+    display: block;
+}
+
+.site-nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.site-nav a {
+    display: block;
+    text-align: center;
+    padding: 0.75rem 1rem;
+    color: hsl(23, 24%, 21%);
+    text-decoration: none;
+}
+
+.site-nav li:not(:last-child) {
+    border-bottom: 1px solid hwb(20 69% 27%);
 }
 
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
     padding: 1rem 1.25rem;
 }
 
@@ -397,23 +424,27 @@ header {
 /* Gemensam header */
     header {
         padding: 1.5rem 3rem;
-    }
+        flex-wrap: nowrap;
+}
 
     .logo {
         font-size: 2rem;
         margin-left: 1rem;
-    }
+}
 
     .hamburger-menu {
         display: none;
-    }
+}
 
     
     .site-nav {
     display: flex;
-    gap: 2rem;
+    flex-basis: auto;
+    gap: 1.5rem;
     margin-right: 1.5rem;
-    }
+    background-color: hsl(35, 86%, 97%);
+    width: auto;
+}
 
     .site-nav ul {
     display: flex;
@@ -421,13 +452,17 @@ header {
     margin: 0;
     padding: 0;
     list-style: none;
-    }
+}
 
     .site-nav a {
     color: hsl(23, 24%, 21%);
     text-decoration: none;
     font-size: 1.5rem;
-    }
+}
+
+    .site-nav li:not(:last-child) {
+    border-bottom: none;
+}
 
 /* Gemensam footer */
     .site-footer {
@@ -436,7 +471,7 @@ header {
     padding: 2.5rem 3rem;
     gap: 3rem;
     font-size: 1.4rem;
-    }
+}
 
 /* Startsida - Hero-sektion */
 .hero-image img {
