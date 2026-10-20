@@ -62,11 +62,15 @@ if (email === "") {
     emailError.textContent = "";
 }
 
+// Hämtar texten från meddelandefältet
+const message = messageInput.value;
 
-
-
-
-
+// Kontrollerar att meddelandefältet inte är tomt
+if (message.trim() === "") {
+    messageError.textContent = "Skriv ett meddelande.";
+} else {
+    messageError.textContent = "";
+}
 
 
 
