@@ -45,15 +45,13 @@ nameError.textContent = "";
 emailError.textContent = "";
 messageError.textContent = "";
 
-
 // Hämtar texten från namnfältet
 const name = nameInput.value;
 
 // Kontrollerar att fältet inte är tomt
-    if (name.trim() === "") {
+if (name.trim() === "") {
+    errors.push("name");
     nameError.textContent = "Fyll i ditt namn.";
-} else {
-    nameError.textContent = "";
 }
 
 // Hämtar texten från e-postfältet
@@ -61,13 +59,14 @@ const email = emailInput.value.trim();
 
 // Kontrollerar att e-postadressen är ifylld
 if (email === "") {
+    errors.push("email");
     emailError.textContent = "Fyll i din e-postadress.";
 
 // Kontrollerar att e-postadressen har ett rimligt format
 } else if (emailInput.validity.typeMismatch) {
+    errors.push("email");
     emailError.textContent = "Ange en giltig e-postadress.";
-} else {
-    emailError.textContent = "";
+    
 }
 
 // Hämtar texten från meddelandefältet
@@ -75,9 +74,12 @@ const message = messageInput.value;
 
 // Kontrollerar att meddelandefältet inte är tomt
 if (message.trim() === "") {
+    errors.push("message");
     messageError.textContent = "Skriv ett meddelande.";
-} else {
-    messageError.textContent = "";
+}
+
+// Returnerar true om inga fel finns
+    return errors.length === 0;
 }
 
 
@@ -88,8 +90,6 @@ contactForm.addEventListener("submit", function (event) {
 // Validera inmatningen
     if (validateForm()) {
 }
-
-
 
 });
 
