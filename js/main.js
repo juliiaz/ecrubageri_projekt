@@ -88,8 +88,7 @@ contactForm.addEventListener("submit", function (event) {
     event.preventDefault();
     
 // Validera inmatningen
-    if (validateForm()) {
-}
+validateForm();
 
 });
 
