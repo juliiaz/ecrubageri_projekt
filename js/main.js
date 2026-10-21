@@ -31,12 +31,20 @@ const nameError = document.getElementById("name-error");
 const emailError = document.getElementById("email-error");
 const messageError = document.getElementById("message-error");
 
-// Körs när kontaktformuläret skickas
-contactForm.addEventListener("submit", function (event) {
-    event.preventDefault();
-
+// Array för felmeddelanden
+let errors = [];
 
 // Kontroll för formulärfälten: 
+function validateForm() {
+
+ // Tömmer arrayen inför varje ny validering
+errors = [];
+
+// Rensa tidigare felmeddelanden
+nameError.textContent = "";
+emailError.textContent = "";
+messageError.textContent = "";
+
 
 // Hämtar texten från namnfältet
 const name = nameInput.value;
@@ -70,6 +78,15 @@ if (message.trim() === "") {
     messageError.textContent = "Skriv ett meddelande.";
 } else {
     messageError.textContent = "";
+}
+
+
+// Körs när kontaktformuläret skickas
+contactForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+    
+// Validera inmatningen
+    if (validateForm()) {
 }
 
 
