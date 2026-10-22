@@ -100,6 +100,21 @@ const favoriteButtons = document.querySelectorAll(".favorite-button");
 // Array som innehåller sparade favoriter
 let favorites = [];
 
+// Sparar favoriterna i localstorage
+function saveFavorites() {
+    localStorage.setItem("favorites", JSON.stringify(favorites));
+}
+
+// Läser in tidigare sparade favoriter
+function loadFavorites() {
+    const savedFavorites = localStorage.getItem("favorites");
+
+    if (savedFavorites) {
+        favorites = JSON.parse(savedFavorites);
+    }
+}
+
+
 
 
 
