@@ -84,13 +84,15 @@ if (message.trim() === "") {
 
 
 // Körs när kontaktformuläret skickas
+if (contactForm) {
 contactForm.addEventListener("submit", function (event) {
     event.preventDefault();
-    
+
 // Validera inmatningen
 validateForm();
 
 });
+}
 
 // Favorit-knappar:
 
@@ -148,6 +150,10 @@ favoriteButtons.forEach(function(button) {
         handleFavorite(product);
     });
 });
+
+// När sidan laddas
+loadFavorites();
+renderFavorites();
 
 
 
