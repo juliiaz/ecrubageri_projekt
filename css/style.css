@@ -92,6 +92,8 @@ header {
 .logo {
     font-family: "Fraunces", Georgia, serif;
     font-size: 1.5rem;
+    text-decoration: none;
+    color: inherit;
 }
 
 .site-footer {
