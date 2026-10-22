@@ -127,6 +127,23 @@ function renderFavorites() {
     });
 }
 
+// Lägger till/ Tar bort en favorit
+function handleFavorite(product) {
+if (favorites.includes(product)) {
+    favorites = favorites.filter(function(favorite) {
+        return favorite !== product;
+        });
+    } else {
+        favorites.push(product);
+    }
+
+    saveFavorites();
+    renderFavorites();
+}
+
+
+
+
 
 
 
