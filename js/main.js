@@ -92,6 +92,14 @@ validateForm();
 
 });
 
+// Favorit-knappar:
+
+// Hämta alla favoritknappar
+const favoriteButtons = document.querySelectorAll(".favorite-button");
+
+// Array som innehåller sparade favoriter
+let favorites = [];
+
 
 
 
