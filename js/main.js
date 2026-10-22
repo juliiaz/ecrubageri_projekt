@@ -114,6 +114,20 @@ function loadFavorites() {
     }
 }
 
+// Uppdaterar texten på favorit-knapparna
+function renderFavorites() {
+    favoriteButtons.forEach(function(button) {
+        const product = button.dataset.product;
+
+        if (favorites.includes(product)) {
+            button.textContent = "♥ Ta bort favorit";
+        } else {
+            button.textContent = "♡ Lägg till favorit";
+        }
+    });
+}
+
+
 
 
 
