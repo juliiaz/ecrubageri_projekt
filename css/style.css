@@ -295,6 +295,11 @@ header {
     border-radius: 0.3rem;
 }
 
+.favorite-button:hover {
+    background-color: oklch(78.565% 0.01397 28.564);
+    color: black;
+}
+
 /* Om oss – introduktion */
 
 .about-intro {
