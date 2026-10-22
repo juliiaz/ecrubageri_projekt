@@ -280,6 +280,19 @@ header {
     padding-bottom: 1rem;
 }
 
+.favorite-button {
+    display: block;
+    margin-left: auto;
+    margin-right: 1rem;
+    margin-bottom: 0.5rem;
+    font-size:1rem;
+    background-color: lab(82.42% 4.54 3.86);
+    color: lch(20.52% 7.79 35.82); 
+    border: none;
+    padding: 0.6rem 1rem;
+    border-radius: 0.3rem;
+}
+
 /* Om oss – introduktion */
 
 .about-intro {
@@ -290,6 +303,7 @@ header {
 .about-intro h1 {
     margin-top: 0;
     margin-bottom: 1rem;
+    font-size:2rem;
 }
 
 .about-intro p {
@@ -545,7 +559,7 @@ header {
 
 /* Sortiment - Introsektion */
 .sortiment-intro h1 {
-    font-size: 2.5rem;
+    font-size: 2.4rem;
 }
 
 .sortiment-intro p {
@@ -572,9 +586,13 @@ header {
     gap: 2rem;
 }
 
+.product-card p {
+    padding-bottom: 0rem;
+}
+
 /* Om oss - Intro */
 .about-intro h1 {
-    font-size: 2.5rem;
+    font-size: 2.4rem;
 }
 
 .about-intro p {
