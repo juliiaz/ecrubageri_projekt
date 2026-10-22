@@ -141,6 +141,15 @@ if (favorites.includes(product)) {
     renderFavorites();
 }
 
+// Eventlyssnare för favoritknapparna
+favoriteButtons.forEach(function(button) {
+    button.addEventListener("click", function() {
+        const product = button.dataset.product;
+        handleFavorite(product);
+    });
+});
+
+
 
 
 
