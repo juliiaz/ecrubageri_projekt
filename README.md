@@ -4,6 +4,9 @@
 Écru Bageri är ett fiktivt nordiskt hantverksbageri.
 Projektet består av en responsiv webbplats.
 
+## Publicerad webbplats
+https://juliiaz.github.io/ecrubageri_projekt/
+
 ## Webbplatsens innehåll
 
 Webbplatsen består av tre sidor:
